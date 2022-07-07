@@ -8,7 +8,7 @@
    --footer: #34314b ;
    --footer-base: #2e2b45;
    --contrast: rgba(195, 196, 197, 0.8);
-   --success: #c3c6c7;
+   --success: #2dd62d;
    --danger: #ff8b8d;
    --grad-1: #a1ecff;
    --grad-2: #7dbcff;
@@ -104,7 +104,10 @@ img {
 
 }
 
-@media (min-width: 1200px)
-{
+@media (min-width: 1200px) {
    .container { max-width: 1140px; }
+}
+
+@media (min-width: 768px) {
+   .pricing-table { max-width: 720px;}
 }
