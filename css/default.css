@@ -1,3 +1,4 @@
+
 :root {
    --white: #fff;
    --black: #000;
@@ -25,6 +26,8 @@
    --size-150: 9.375rem;
    
 }
+
+html { scroll-behavior: smooth;}
 
 body {
    font-family: "Open Sans", sans-serif;
@@ -89,6 +92,7 @@ img {
 }
 
 .btn-primary {
+   
    background-image: linear-gradient(90deg, var(--grad-1) 0%, var(--grad-2) 100%);
    border: 1px soild var(--white);
    box-shadow: 0 10px 20px rgba(161, 236, 255, 0.5);
@@ -104,7 +108,6 @@ img {
 
 }
 
-
 @media (min-width: 768px) {
    .pricing-table,
    .testimonial-grid { max-width: 720px;}
@@ -116,5 +119,5 @@ img {
 
 
 @media (min-width: 1200px) {
-   .container { max-width: 1140px; }
+   .container { max-width: 1240px; }
 }
