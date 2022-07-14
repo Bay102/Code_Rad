@@ -76,4 +76,22 @@
    background-color: #c4c9ca;
 }
 
+.block {
+ color: black;
+ font-family: copperplate;
+ text-align: center;
+ padding-bottom: 50px;
+}
+
+.navbar-brand {
+   color: black;
+   background-color: lightblue;
+   border-radius: 10px;
+}
+
+.footer-bottom-wrapper {
+   display: inherit;
+   text-align: center;
+}
+
 }

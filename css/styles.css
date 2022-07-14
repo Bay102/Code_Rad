@@ -19,7 +19,7 @@
 
 .navbar-toggler {
    position:absolute;
-   top: var(--size-20);
+   top: 12px;
    right: var(--size-10);
    background-color: transparent;
    border: 1px solid transparent;
