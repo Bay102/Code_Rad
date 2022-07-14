@@ -7,19 +7,30 @@
    transition: ease-in-out 0.3s;
 }
 
-.navbar-toggler {      
-   position: absolute;
-   right: var(--size-20);
-   top: var(--size-10);
-   outline: none;
+.navbar.sticky {
    background-color: transparent;
-   border: 1px solid transparent; }
+   box-shadow: 0px 0px 20px rgba(48, 63, 100, 0.2);
+}
 
-   .navbar-toggler span {
-      color: var(--white);
-      font-size: var(--size-20);
-      cursor: pointer;
-   }
+.navbar.sticky .navbar-toggler span,
+.navbar.sticky .navbar-brand span { 
+   color: var(--font-color-dark);
+}
+
+.navbar-toggler {
+   position:absolute;
+   top: var(--size-20);
+   right: var(--size-10);
+   background-color: transparent;
+   border: 1px solid transparent;
+}
+
+.navbar-toggler span {
+   color: var(--black);
+   font-size: var(--size-20);
+   cursor: pointer;
+   pointer-events: none;
+}
 
 [aria-controls="navbarDropdown"] {
    display: none;
@@ -41,8 +52,19 @@
    font-weight: 700;
    width: 100%;
    transition: ease-in-out 0.3s;
-   color: var(--white)
+   color: var(--white);
 } 
+
+.nav-link a {
+   color: var(--white);
+   font-size: 0.8125rem;
+   font-weight: 600;
+   font-family: "hind",sans-serif;
+   text-transform: uppercase;
+   margin-right: var(--size-30);
+   line-height: var(--size-20);
+}
+
 
 .bg-header, 
 .video-demo {
@@ -80,23 +102,14 @@
    content: "";
 }
 
-.nav-link a {
-   color: var(--white);
-   font-size: 0.8125rem;
-   font-weight: 600;
-   font-family: "hind",sans-serif;
-   text-transform: uppercase;
-   margin-right: var(--size-30);
-   line-height: var(--size-20);
-}
 
 .hero-header {
    color: var(--white);  
 }
 
 .why-me {
-   padding: var(--size-1);
-}
+   padding: var(--size-150) 0;
+ }
 
 .why-me-wrapper {
    display: flex;
@@ -111,7 +124,7 @@
 .why-me-wrapper div {
    flex: 1; 
 }
-.block-text { padding-right: var(--size-150); }
+.block-text { padding-right: var(--size-50); }
 
 .block-text span {
    color: var(--font-color-dark);
